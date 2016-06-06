@@ -32,12 +32,12 @@ document.body.appendChild(container);
 
 
 
-
 for (var counter = 0; counter < 63; counter++) {
 
   if(counter % 2 === 0){
     var div1 = document.createElement("div");
-    div1.style.background = "#000000";
+    div1.style.background = '#'+'0123456789abcdef'.split('').map(function(v,i,a){
+  return i>5 ? null : a[Math.floor(Math.random()*16)] }).join('');
     div1.style.width = "11.1%";
     div1.style.paddingBottom = "11.1%";
     div1.style.float = "left";
@@ -46,7 +46,8 @@ for (var counter = 0; counter < 63; counter++) {
   }
   else{
     var div2 = document.createElement("div");
-    div2.style.background = "#FF0000";
+    div2.style.background = '#'+'0123456789abcdef'.split('').map(function(v,i,a){
+  return i>5 ? null : a[Math.floor(Math.random()*16)] }).join('');
     div2.style.width = "11.1%";
     div2.style.paddingBottom = "11.1%";
     div2.style.float = "left";
