@@ -6,7 +6,5 @@ var color = '#' + '0123456789abcdef'.split('').map(function(x,y, z){ return z[Ma
 return color
 }
 
-// setTimeout(function(){
-//    window.location.reload(1);
-// }, 2000);
+
 console.log(getRando());

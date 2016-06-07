@@ -30,8 +30,6 @@ container.style.padding = "0";
 
 document.body.appendChild(container);
 
-var colors = '0123456789abcdef'.split('').map(function(x,y, z){ return z[Math.floor(Math.random()*16)] }).join('').slice(0,6);
-
 
 for (var counter = 0; counter < 63; counter++) {
     var div1 = document.createElement("div");
@@ -42,7 +40,7 @@ for (var counter = 0; counter < 63; counter++) {
     div1.style.display = "inline-block";
     container.appendChild(div1);
   }
-  
+
   function getRando() {
   var color = '#' + '0123456789abcdef'.split('').map(function(x,y, z){
     return z[Math.floor(Math.random()*16)] }).join('').slice(0,6);
